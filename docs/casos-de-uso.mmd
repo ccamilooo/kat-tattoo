@@ -1,0 +1,85 @@
+flowchart LR
+  %% ===== Actores =====
+  V(["Visitante"])
+  C(["Cliente"])
+  AR(["Artista"])
+  AD(["Administrador"])
+
+  %% ===== Sitio público =====
+  subgraph PUB["Sitio Publico"]
+    UC1("CU-01 Ver servicios")
+    UC2("CU-02 Ver galeria")
+    UC3("CU-03 Nosotros / artistas")
+    UC4("CU-04 Reservar cita")
+    UC5("CU-05 Contacto")
+    UC7("CU-07 Disponibilidad")
+  end
+
+  %% ===== Cuenta =====
+  subgraph CUENTA["Cuenta / Acceso"]
+    UC6("CU-06 Registrarse")
+    UC8("CU-08 Iniciar sesion")
+    UC9("CU-09 Recuperar contrasena")
+    UC10("CU-10 Actualizar perfil")
+  end
+
+  %% ===== Área cliente =====
+  subgraph CLI["Area Cliente"]
+    UC11("CU-11 Historial de citas")
+    UC12("CU-12 Preferencias / disponibilidad")
+    UC13("CU-13 Referencia + analisis IA")
+    UC14("CU-14 Propuestas de diseno IA")
+    UC15("CU-15 Generar imagen IA")
+    UC16("CU-16 Chat asistente IA")
+    UC18("CU-18 Estado de su cita")
+  end
+
+  %% ===== Área artista =====
+  subgraph ART["Area Artista"]
+    UC19("CU-19 Ver citas asignadas")
+    UC20("CU-20 Aceptar / rechazar cita")
+    UC21("CU-21 Registrar avance de sesion")
+    UC22("CU-22 Diseno IA para galeria")
+  end
+
+  %% ===== Panel admin =====
+  subgraph ADM["Panel Administrador"]
+    UC23("CU-23 Gestionar artistas")
+    UC24("CU-24 Gestionar servicios")
+    UC25("CU-25 Gestionar portafolio")
+    UC26("CU-26 Horarios (RF16)")
+    UC27("CU-27 Gestionar citas")
+    UC28("CU-28 Reprogramar cita")
+    UC29("CU-29 Dashboard")
+    UC30("CU-30 Mensajes de contacto")
+    UC31("CU-31 Auditoria")
+    UC32("CU-32 Referencias IA de clientes")
+    UC33("CU-33 Reset de contrasenas")
+    UC34("CU-34 Subir imagen")
+  end
+
+  %% ===== Sistema =====
+  subgraph SYS["Sistema"]
+    UC17("CU-17 Notificaciones")
+    UC35("CU-35 Notif + auditoria automatica")
+    UC36("CU-36 IDs legibles (triggers)")
+  end
+
+  %% ===== Asociaciones =====
+  V --- UC1 & UC2 & UC3 & UC4 & UC5 & UC7
+  V --> UC6
+  V --> UC8
+  V --> UC9
+
+  C --- UC8 & UC9 & UC10 & UC11 & UC12 & UC13 & UC14 & UC15 & UC16 & UC17 & UC18
+  UC13 --> UC14 --> UC15
+
+  AR --- UC8 & UC17 & UC19 & UC20 & UC21 & UC22
+
+  AD --- UC8 & UC17
+  AD --> UC23 & UC24 & UC25 & UC26 & UC27 & UC28 & UC29 & UC30 & UC31 & UC33
+  AD --> UC34 --> UC23 & UC24 & UC25
+  AD --- UC32
+
+  UC17 --- UC35
+  UC35 --- UC36

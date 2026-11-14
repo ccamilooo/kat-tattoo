@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAT Tattoo Studio | Arte en la piel</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css?v=3">
+    <link rel="stylesheet" href="/css/extra.css?v=6">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/Imagenes/logo-removebg-preview.png" alt="Logo KAT Tattoo">
+            </div>
+
+            <ul>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#citas">Reservar Cita</a></li>
+                <li><a href="#mi-espacio">Mi Espacio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="nav-acc">
+                <a href="/ai.html" class="btn-ia">Asistente IA</a>
+                <button class="btn2" id="nav-salir" style="display:none;" onclick="salirCuenta()">Salir</button>
+                <button class="btn" id="nav-login" onclick="abrirCuenta()">Iniciar Sesión</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INICIO -->
+        <section class="hero" id="inicio">
+            <div class="background-glow"></div>
+
+            <div class="contenido">
+                <span class="etiqueta">ESTUDIO DE TATUAJES</span>
+                <h1>KAT TATTOO</h1>
+                <p>Arte en la piel, maestría en cada trazo.</p>
+
+                <div class="botones">
+                    <a href="#citas" class="btn">Reservar Cita</a>
+                    <a href="#galeria" class="btn2">Ver Galería</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="galeria" id="galeria">
+            <div class="galeria-header">
+                <span class="galeria-etiqueta">NUESTRO ARTE</span>
+                <h2>Tatuajes <span>Destacados</span></h2>
+                <p>Cada diseño cuenta una historia. Explora algunos de los trabajos realizados por nuestros artistas.</p>
+            </div>
+
+            <div class="galeria-grid" id="galeria-grid">
+                <div class="galeria-item">
+                    <p style="color:#cfc6d3; padding:20px; text-align:center;">Cargando galería...</p>
+                </div>
+            </div>
+
+            <div class="galeria-footer">
+                <p>¿Quieres que tu próximo tatuaje esté aquí?</p>
+                <a href="#citas" class="btn">Reservar Cita</a>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="servicios" id="servicios">
+            <div class="servicios-header">
+                <span class="servicios-etiqueta">NUESTROS SERVICIOS</span>
+                <h2>Arte que llevamos a <span>tu piel</span></h2>
+                <p>
+                    En KAT Tattoo Studio transformamos ideas en expresiones de arte, ofreciendo tatuajes,
+                    piercings y obras realizadas por nuestros artistas, con atención al detalle y una
+                    propuesta creativa en cada trabajo.
+                </p>
+            </div>
+
+            <div class="servicios-grid" id="servicios-grid">
+                <p style="color:#cfc6d3; grid-column:1/-1; text-align:center;">Cargando servicios...</p>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="nosotros" id="nosotros">
+            <div class="nosotros-header">
+                <span class="nosotros-etiqueta">CONOCE KAT TATTOO</span>
+                <h2>Arte que nace de la <span>pasión</span></h2>
+                <p>
+                    En Kat Tattoo fusionamos las artes plásticas, la precisión técnica
+                    y la expresión personal para crear obras de arte que trascienden la piel.
+                </p>
+            </div>
+
+            <div class="mision-vision">
+                <div class="nosotros-card">
+                    <div class="nosotros-icono">✦</div>
+                    <h3>Misión</h3>
+                    <p>
+                        En Kat Tattoo transformamos las ideas y lienzos de nuestros clientes
+                        en obras de arte de alta complejidad técnica y precisión,
+                        especializándonos en estilos como full color, blackwork, black & grey,
+                        neotradicional, fine line y minimalismo.
+                    </p>
+                    <p>
+                        Nos comprometemos a ofrecer una experiencia segura, profesional
+                        y profundamente artística, impulsando además el crecimiento de la
+                        comunidad del tatuaje a través de la formación de nuevos talentos
+                        bajo los más altos estándares de calidad.
+                    </p>
+                </div>
+
+                <div class="nosotros-card">
+                    <div class="nosotros-icono">◈</div>
+                    <h3>Visión</h3>
+                    <p>
+                        Para el año 2030, ser reconocidos como un estudio referente de arte
+                        y tatuaje a nivel nacional e internacional, destacándonos por la
+                        impecable ejecución de piezas complejas, la constante innovación
+                        técnica y nuestro modelo educativo.
+                    </p>
+                    <p>
+                        Queremos consolidar a Kat Tattoo no solo como un espacio de
+                        modificación corporal, sino como una academia y un templo de
+                        expresión de las artes plásticas aplicadas a la piel.
+                    </p>
+                </div>
+            </div>
+
+            <div class="diferenciales">
+                <div class="nosotros-header">
+                    <span class="nosotros-etiqueta">NUESTRA ESENCIA</span>
+                    <h2>Lo que nos hace <span>diferentes</span></h2>
+                    <p>La fusión exacta entre la maestría de las artes plásticas, la versatilidad técnica y el pilar educativo.</p>
+                </div>
+
+                <div class="diferenciales-grid">
+                    <div class="diferencial-card">
+                        <span class="numero-card">01</span>
+                        <h3>Fundamento Artístico Real</h3>
+                        <p>
+                            Nuestros diseños se basan en los principios de las artes plásticas,
+                            como el dominio del volumen y el contraste mediante la teoría del color,
+                            logrando una profundidad visual que no se ve en estudios comerciales.
+                        </p>
+                    </div>
+
+                    <div class="diferencial-card">
+                        <span class="numero-card">02</span>
+                        <h3>Hiperversatilidad Técnica</h3>
+                        <p>
+                            Dominamos con maestría las distintas técnicas del tatuaje, desde piezas
+                            complejas de gran formato, como full color, blackwork y neotradicional,
+                            hasta la máxima sutileza y precisión del fine line y el minimalismo.
+                        </p>
+                    </div>
+
+                    <div class="diferencial-card">
+                        <span class="numero-card">03</span>
+                        <h3>Pilar Educativo Estructurado</h3>
+                        <p>
+                            No solo tatuamos, sino que también formamos profesionales mediante una
+                            siguiente generación de artistas mediante un programa modular formal,
+                            consolidándonos como una academia y un referente de la profesión.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artistas">
+                <div class="nosotros-header">
+                    <span class="nosotros-etiqueta">NUESTRO TALENTO</span>
+                    <h2>Conoce a nuestros <span>artistas</span></h2>
+                    <p>Profesionales que convierten la creatividad, la técnica y la pasión en obras de arte sobre la piel.</p>
+                </div>
+
+                <div class="artistas-grid" id="artistas-grid">
+                    <p style="color:#cfc6d3; grid-column:1/-1; text-align:center;">Cargando artistas...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESERVAR CITA -->
+        <section class="section" id="citas">
+            <div class="section-header">
+                <span class="section-etiqueta">AGENDA</span>
+                <h2>Reserva tu <span>Cita</span></h2>
+                <p>Elige fecha, servicio y artista. Te confirmaremos por correo o teléfono.</p>
+            </div>
+
+            <div class="form-card">
+                <form id="form-cita" class="form-grid">
+                    <div class="campo">
+                        <label for="cita-nombre">Nombre completo</label>
+                        <input type="text" id="cita-nombre" required placeholder="Tu nombre">
+                    </div>
+
+                    <div class="campo">
+                        <label for="cita-telefono">Teléfono</label>
+                        <input type="tel" id="cita-telefono" placeholder="+52 ...">
+                    </div>
+
+                    <div class="campo">
+                        <label for="cita-email">Email</label>
+                        <input type="email" id="cita-email" placeholder="tu@correo.com">
+                    </div>
+
+                    <div class="campo">
+                        <label for="cita-fecha">Fecha y hora</label>
+                        <input type="datetime-local" id="cita-fecha" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cita-servicio">Servicio</label>
+                        <select id="cita-servicio" required>
+                            <option value="">Selecciona un servicio...</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cita-artista">Artista</label>
+                        <select id="cita-artista">
+                            <option value="">Preferencia / cualquiera</option>
+                        </select>
+                    </div>
+
+                    <div class="campo full">
+                        <label for="cita-notas">Notas</label>
+                        <textarea id="cita-notas" placeholder="Cuéntanos tu idea, tamaño, zona del cuerpo, etc."></textarea>
+                    </div>
+
+                    <div class="campo full">
+                        <button type="submit" class="btn btn-block" id="btn-cita">Reservar cita</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- MI ESPACIO (cliente autenticado) -->
+        <section class="section" id="mi-espacio">
+            <div class="section-header">
+                <span class="section-etiqueta">MI CUENTA</span>
+                <h2>Mi <span>Espacio</span></h2>
+                <p>Perfil, referencias con IA y estado de tus citas.</p>
+            </div>
+            <div id="mi-espacio-bloque">
+                <div class="form-card" style="text-align:center; padding:40px 20px;">
+                    <p style="color:#cfc6d3;">Inicia sesión para ver tu espacio de cliente.</p>
+                    <button class="btn" onclick="abrirCuenta()">Iniciar Sesión</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section" id="contacto">
+            <div class="section-header">
+                <span class="section-etiqueta">CONTACTO</span>
+                <h2>Hablemos de tu <span>próximo tatuaje</span></h2>
+                <p>Escríbenos cualquier duda. Respondemos lo antes posible.</p>
+            </div>
+
+            <div class="contacto-wrap">
+                <div class="contacto-info">
+                    <h3>KAT Tattoo Studio</h3>
+                    <p>Visítanos en nuestro estudio o escríbenos. Estamos para ayudarte a materializar tu idea.</p>
+
+                    <div class="contacto-item">
+                        <span class="icono">📍</span>
+                        <span>Av. Principal 123, Col. Centro</span>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="icono">📞</span>
+                        <span>+52 55 0000 0000</span>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="icono">✉️</span>
+                        <span>hola@kattattoo.com</span>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="icono">🕐</span>
+                        <span>Mar - Sáb: 11:00 a 20:00</span>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <form id="form-contacto" class="form-grid">
+                        <div class="campo">
+                            <label for="con-nombre">Nombre</label>
+                            <input type="text" id="con-nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="con-email">Email</label>
+                            <input type="email" id="con-email" required placeholder="tu@correo.com">
+                        </div>
+                        <div class="campo full">
+                            <label for="con-telefono">Teléfono</label>
+                            <input type="tel" id="con-telefono" placeholder="Opcional">
+                        </div>
+                        <div class="campo full">
+                            <label for="con-asunto">Asunto</label>
+                            <input type="text" id="con-asunto" placeholder="Opcional">
+                        </div>
+                        <div class="campo full">
+                            <label for="con-mensaje">Mensaje</label>
+                            <textarea id="con-mensaje" required placeholder="Escribe tu mensaje..."></textarea>
+                        </div>
+                        <div class="campo full">
+                            <button type="submit" class="btn btn-block" id="btn-contacto">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="/Imagenes/logo-removebg-preview.png" alt="KAT Tattoo">
+                <span>KAT Tattoo Studio</span>
+            </div>
+            <p class="footer-tag">Arte en la piel, maestría en cada trazo.</p>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#galeria">Galería</a>
+                <a href="#citas">Reservar Cita</a>
+                <a href="#contacto">Contacto</a>
+                <a href="/panel.html" class="footer-panel">🔐 Panel de gestión</a>
+            </div>
+            <p class="footer-copy">© 2026 KAT Tattoo Studio · Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- MODAL CUENTA (login / registro) -->
+    <div class="cuenta-modal" id="cuenta-modal" style="display:none;" onclick="if(event.target===this)cerrarCuenta()">
+        <div class="cuenta-modal-box">
+            <button class="cuenta-cerrar" onclick="cerrarCuenta()">✕</button>
+
+            <div class="cuenta-tabs">
+                <button class="cuenta-tab activo" id="tab-login" onclick="cambiarTab('login')">Iniciar Sesión</button>
+                <button class="cuenta-tab" id="tab-register" onclick="cambiarTab('register')">Registrarme</button>
+            </div>
+
+            <form id="form-login" class="form-grid">
+                <div class="campo">
+                    <label for="cu-email">Email</label>
+                    <input type="email" id="cu-email" required placeholder="tu@correo.com">
+                </div>
+                <div class="campo">
+                    <label for="cu-password">Contraseña</label>
+                    <input type="password" id="cu-password" required placeholder="••••••••">
+                </div>
+                <div class="campo full">
+                    <button type="submit" class="btn btn-block">Entrar</button>
+                </div>
+            </form>
+
+            <form id="form-register" class="form-grid" style="display:none;">
+                <div class="campo">
+                    <label for="rg-nombre">Nombre completo</label>
+                    <input type="text" id="rg-nombre" required placeholder="Tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="rg-email">Email</label>
+                    <input type="email" id="rg-email" required placeholder="tu@correo.com">
+                </div>
+                <div class="campo">
+                    <label for="rg-telefono">Teléfono</label>
+                    <input type="tel" id="rg-telefono" placeholder="+52 ...">
+                </div>
+                <div class="campo">
+                    <label for="rg-password">Contraseña</label>
+                    <input type="password" id="rg-password" required minlength="6" placeholder="Mínimo 6 caracteres">
+                </div>
+                <div class="campo full">
+                    <button type="submit" class="btn btn-block">Crear cuenta</button>
+                </div>
+            </form>
+
+            <p class="cuenta-olvido">
+                <a href="#" onclick="event.preventDefault();mostrarOlvido()">¿Olvidaste tu contraseña?</a>
+            </p>
+            <p class="cuenta-msg" id="cuenta-msg"></p>
+
+            <form id="form-forgot" class="form-grid" style="display:none;">
+                <div class="campo full">
+                    <label for="fg-email">Tu email</label>
+                    <input type="email" id="fg-email" required placeholder="tu@correo.com">
+                </div>
+                <div class="campo full">
+                    <button type="submit" class="btn btn-block">Enviar código</button>
+                </div>
+            </form>
+
+            <form id="form-reset" class="form-grid" style="display:none;">
+                <div class="campo">
+                    <label for="rs-code">Código de verificación</label>
+                    <input type="text" id="rs-code" required placeholder="000000" maxlength="6">
+                </div>
+                <div class="campo full">
+                    <label for="rs-pass">Nueva contraseña</label>
+                    <input type="password" id="rs-pass" required minlength="6" placeholder="Mínimo 6 caracteres">
+                </div>
+                <div class="campo full">
+                    <button type="submit" class="btn btn-block">Restablecer contraseña</button>
+                </div>
+            </form>
+
+            <p class="cuenta-olvido">
+                <a href="#" onclick="event.preventDefault();volverLogin()" id="link-volver" class="volver-login" style="display:none;">← Volver al inicio de sesión</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <!-- WIDGET IA FLOTANTE -->
+    <button class="ia-widget-boton" id="ia-widget-boton" title="Pregúntale a nuestro asistente IA">🤖</button>
+
+    <div class="ia-widget" id="ia-widget">
+        <div class="chat-header">
+            <div class="avatar">🤖</div>
+            <div>
+                <div class="nombre">Kat IA</div>
+                <div class="estado">● En línea</div>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="ia-msgs">
+            <div class="mensaje assistant">¡Hola! 👋 Soy el asistente de KAT Tattoo Studio. ¿En qué puedo ayudarte hoy?</div>
+        </div>
+
+        <div class="chat-sugerencias" id="ia-sugerencias">
+            <button data-text="¿Cuánto cuesta un tatuaje?">Precios</button>
+            <button data-text="¿Cuáles son los cuidados después de tatuarme?">Cuidados</button>
+            <button data-text="¿Cómo reservo una cita?">Reservar cita</button>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="ia-input" placeholder="Escribe tu pregunta..." autocomplete="off">
+            <button class="btn-chat" id="ia-enviar">➤</button>
+        </div>
+    </div>
+
+    <script src="/js/main.js?v=5"></script>
+    <script src="/js/clientes.js?v=12"></script>
+    <script src="/js/ai.js?v=2"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Gestión | KAT Tattoo Studio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css?v=3">
+    <link rel="stylesheet" href="/css/panel.css?v=6">
+</head>
+
+<body>
+
+    <!-- ===== PANTALLA DE LOGIN ===== -->
+    <div id="login-view">
+        <div class="login-card">
+            <div class="login-card-inner">
+                <div class="login-avatar">🔐</div>
+                <h1>Panel de <span>Gestión</span></h1>
+                <p>KAT Tattoo Studio</p>
+
+                <form id="login-form">
+                    <div class="campo">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required placeholder="correo@kattattoo.com">
+                    </div>
+                    <div class="campo">
+                        <label for="login-password">Contraseña</label>
+                        <input type="password" id="login-password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn btn-block">Iniciar sesión</button>
+                </form>
+
+                <p class="login-olvido">
+                    <a href="#" onclick="event.preventDefault();mostrarOlvidoPanel()">¿Olvidaste tu contraseña?</a>
+                </p>
+
+                <form id="login-forgot-form" style="display:none;">
+                    <div class="campo">
+                        <label for="lg-email">Tu email</label>
+                        <input type="email" id="lg-email" required placeholder="correo@kattattoo.com">
+                    </div>
+                    <button type="submit" class="btn btn-block">Enviar código</button>
+                    <p class="login-olvido" id="lg-out"></p>
+                </form>
+
+                <form id="login-reset-form" style="display:none;">
+                    <div class="campo">
+                        <label for="lg-code">Código de verificación</label>
+                        <input type="text" id="lg-code" required placeholder="000000" maxlength="6">
+                    </div>
+                    <div class="campo">
+                        <label for="lg-pass">Nueva contraseña</label>
+                        <input type="password" id="lg-pass" required minlength="6" placeholder="Mínimo 6 caracteres">
+                    </div>
+                    <button type="submit" class="btn btn-block">Restablecer contraseña</button>
+                </form>
+
+                <p class="login-olvido">
+                    <a href="#" id="link-volver-panel" onclick="event.preventDefault();volverLoginPanel()" style="display:none;">← Volver al inicio de sesión</a>
+                </p>
+
+                <hr class="login-divisor">
+                <p class="login-cred">Demo admin: <code>admin@kattattoo.com</code> / <code> ACCESO </code><br>
+                Artista: <code>nataly.arguello@kattattoo.com</code> / <code> ACCESO </code></p>
+
+                <a href="/" class="btn2 login-back">← Volver al sitio</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PANEL ===== -->
+    <div id="panel-view" style="display:none;">
+
+        <header class="panel-header">
+            <div class="panel-header-inner">
+                <div class="panel-brand">
+                    <img src="/Imagenes/logo-removebg-preview.png" alt="KAT">
+                    <span>KAT Tattoo · Gestión</span>
+                </div>
+                <div class="panel-user">
+                    <span id="user-rol"></span>
+                    <strong id="user-nombre"></strong>
+                    <a href="/" class="btn2 panel-link">Sitio</a>
+                    <button id="btn-logout" class="btn panel-link">Salir</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="panel-body">
+            <aside class="panel-sidebar">
+                <nav id="panel-nav">
+                    <!-- Tabs dinámicos por rol -->
+                </nav>
+            </aside>
+
+            <main class="panel-main">
+                <div id="notif-banner" class="notif-banner" style="display:none;"></div>
+
+                <div id="view-dashboard" class="panel-view">...</div>
+                <div id="view-clientes" class="panel-view"></div>
+                <div id="view-artistas" class="panel-view"></div>
+                <div id="view-servicios" class="panel-view"></div>
+                <div id="view-citas" class="panel-view"></div>
+                <div id="view-mis-citas" class="panel-view"></div>
+                <div id="view-portafolio" class="panel-view"></div>
+                <div id="view-mensajes" class="panel-view"></div>
+                <div id="view-referencias" class="panel-view"></div>
+                <div id="view-perfil" class="panel-view"></div>
+                <div id="view-disponibilidad" class="panel-view"></div>
+                <div id="view-mis-referencias" class="panel-view"></div>
+                <div id="view-mis-notas" class="panel-view"></div>
+                <div id="view-notificaciones" class="panel-view"></div>
+                <div id="view-auditoria" class="panel-view"></div>
+            </main>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="/js/panel.js?v=14"></script>
+</body>
+
+</html>

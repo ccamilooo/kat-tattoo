@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente IA | KAT Tattoo Studio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css?v=2">
+    <link rel="stylesheet" href="/css/extra.css?v=2">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/Imagenes/logo-removebg-preview.png" alt="Logo KAT Tattoo">
+            </div>
+
+            <ul>
+                <li><a href="/#inicio">Inicio</a></li>
+                <li><a href="/#galeria">Galería</a></li>
+                <li><a href="/#servicios">Servicios</a></li>
+                <li><a href="/#citas">Reservar Cita</a></li>
+                <li><a href="/#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="nav-acc">
+                <a href="/ai.html" class="btn-ia">Asistente IA</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="ai-page">
+
+        <div class="ai-hero">
+            <span class="section-etiqueta">ASISTENTE VIRTUAL</span>
+            <h1>Chat con nuestro <span>asistente IA</span></h1>
+            <p>Pregunta sobre precios, cuidados, diseños, citas y todo lo que necesites saber de KAT Tattoo Studio.</p>
+        </div>
+
+        <div class="chat-box">
+            <div class="chat-header">
+                <div class="avatar">🤖</div>
+                <div>
+                    <div class="nombre">Kat IA</div>
+                    <div class="estado">● En línea</div>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="ia-msgs">
+                <div class="mensaje assistant">¡Hola! 👋 Soy el asistente de KAT Tattoo Studio. ¿En qué puedo ayudarte hoy?</div>
+            </div>
+
+            <div class="chat-sugerencias" id="ia-sugerencias">
+                <button data-text="¿Cuánto cuesta un tatuaje?">Precios</button>
+                <button data-text="¿Cuáles son los cuidados después de tatuarme?">Cuidados</button>
+                <button data-text="¿Cómo reservo una cita?">Reservar cita</button>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="ia-input" placeholder="Escribe tu pregunta..." autocomplete="off">
+                <button class="btn-chat" id="ia-enviar">Enviar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="/Imagenes/logo-removebg-preview.png" alt="KAT Tattoo">
+                <span>KAT Tattoo Studio</span>
+            </div>
+            <div class="footer-links">
+                <a href="/#inicio">Inicio</a>
+                <a href="/#galeria">Galería</a>
+                <a href="/#contacto">Contacto</a>
+                <a href="/panel.html" class="footer-panel">🔐 Panel de gestión</a>
+            </div>
+            <p class="footer-copy">© 2026 KAT Tattoo Studio · Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="/js/ai.js?v=2"></script>
+</body>
+
+</html>
