@@ -1,0 +1,39 @@
+# ============================================================
+#  KAT TATTOO STUDIO - CONFIGURACIÃ“N
+# ============================================================
+
+# -- Servidor --
+PORT=3000
+
+# -- PostgreSQL --
+PGHOST=127.0.0.1
+PGPORT=5432
+PGDATABASE=kat_tattoo
+PGUSER=postgres
+PGPASSWORD=************
+
+# -- IA local con Ollama + Qwen (gratis, sin claves) --
+# Texto y visión corren en este PC con Ollama; las imágenes con Flux (Pollinations).
+OLLAMA_URL=http://localhost:11434
+OLLAMA_MODEL=qwen2.5:3b
+# Modelo de visión para analizar fotos de referencia.
+OLLAMA_VISION_MODEL=qwen2.5vl:3b
+
+# -- Autenticación (JWT) --
+JWT_SECRET=k4t_t4tt00_stud1o_s3cr3t_2026
+JWT_EXPIRES=12h
+
+# -- Envío de correo --
+# Proveedor principal: RESEND (API key). Crea tu clave gratis en https://resend.com
+# y verifica el correo emisor (MAIL_FROM). Mientras tanto, con onboarding@resend.dev
+# solo puedes enviar a tu propio correo verificado.
+RESEND_API_KEY= re_LqDBYiFD_Dv37Z55tJRTitCB5h4coaBBh
+MAIL_FROM=onboarding@resend.dev
+MAIL_FROM_NAME=KAT Tattoo Studio
+
+# -- SMTP (respaldo). Gmail: contraseña de aplicación en https://myaccount.google.com/apppasswords --
+# SMTP_HOST=smtp.gmail.com
+# SMTP_PORT=465
+# SMTP_SECURE=true
+# SMTP_USER=
+# SMTP_PASS=
